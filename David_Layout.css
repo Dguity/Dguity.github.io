@@ -1,0 +1,82 @@
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+body > header {
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+body > header > img {
+	margin: 0px;
+	padding: 0px;
+}
+/*Float Element*/
+body > nav {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 2%;
+}
+/*Block Element*/
+body {
+  
+      display:grid;
+  
+      grid-template-columns: 2fr 1fr;
+
+      grid-column-gap: 20px;
+  
+  }
+  /*Grid Layout*/
+  header {
+  
+    grid-column: 1/-1;
+  
+  }
+  
+  footer {
+  
+    grid-column: 1/-1;
+  
+  }
+  
+  section#sub {
+  
+    display: grid;
+  
+    grid-template-columns: repeat(3/ 1fr);
+  
+  }
+  /*Relative, Absolute Positioning , and Overflow*/
+aside {
+  
+    position: relative;
+  
+    height: 650px;
+  
+    overflow: auto;
+  
+  }
+  
+  aside > div {
+  
+    position: absolute;
+  
+    width: 30%;
+  
+  }
+  /*@media and flex/flexbox*/
+@media only screen and (max-width: 480px) {
+
+nav.vertical ul {
+display: -webkit-flex;
+display: flex;
+webkit-flex-flow: column wrap;
+flex-flow: column wrap;
+height: 240px;
+}

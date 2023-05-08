@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>David's Creative Group Sign up</title>
+<script src="SocialEvent_Countdown.js" defer></script>
+</head>
+
+<body>
+<!--Form with multiple field sets-->
+<form align="center">
+
+<h3 style="color:#F00">Personal Information</h3>
+<!--Input text-->
+Name:
+<!--Required field-->
+<input type="text" name="name" id="name" required><br><br>
+
+Password:
+
+<input type="password" name="password" id="password" required><br><br>
+<!--Set for Mobile Keyboard-->
+E-mail Address: <input type="text" name="name" id="name" required><br><br>
+<!--Radio Buttons-->
+Gender: <input type="radio" name="radiogroup1" value="radio" id="radiogroup1"> Male
+
+<input type="radio" name="radiogroup1" value="radio" id="radiogroup2"> Female
+<input type="radio" name="radiogroup1" value="radio" id="radiogroup2"> Opt Out<br><br>
+<!--Field length-->
+Contact #: <input type="text" maxlength="10" name="mobile" id="mobile" required>
+
+<h3 style="color:#F00">Interests</h3>
+<!--Datalist-->
+<label for="artform">Art Form:</label>
+<input list="artform" name="artform" id="artform">
+
+<datalist id="artform">
+<option value="Photography">
+
+<option value="Fashion">
+
+<option value="Music">
+
+<option value="Painting">
+
+<option value="Graphic Design">
+
+</datalist><br>
+
+<br>
+<!--Selection List-->
+Years Of Experience: <select name="eng" id="eng">
+
+<option selected>-- Select Years --</option>
+
+<option>Less than 1</option>
+
+<option>1</option>
+
+<option>2</option>
+
+<option>3</option>
+
+<option>4</option>
+
+<option>5+</option>
+
+</select><br><br>
+<!--Check Boxes-->
+Hobbies: <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1">Modeling
+
+<input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup2">Drawing
+
+<input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup3">Video Games
+
+<input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup4">Skating
+
+<input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup5">Other(will describe below)<br><br>
+<!-- Range Slider-->
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">Dedication Level
+</div>
+
+<h3 style="color:#F00">What Can You Bring To The Team?</h3>
+<!--Text Area-->
+<textarea name="textarea" cols="35" rows="5" id="textarea" maxlength="150" required></textarea><br>
+
+<br>
+
+Attach Image of Work: <input type="file" name="fileField" id="fileField"><br><br>
+<!--Date/Time-->
+<label for="meeting-time"><strong>Choose a Date & Time for our one on one Zoom Meeting:</strong></label>
+
+<input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2023-05-12T08:30"
+       min="2023-05-08T00:00" max="2023-06-30T00:00">
+	   
+<!--Submit/Reset Button-->
+<button type="submit">Submit</button>
+
+<button type="reset">Reset</button>
+
+<!--Spinner-->
+<span class="loader"></span>
+
+<!--Countdown for Social Event-->
+<br /><label for="countdown"><h3 style="color:#F00"><strong>Countdown until my first big Networking Social Event (January 6th 2024)!</strong></h3></label>
+<div id="dateNow">5/7/2023<br />10:42:00 p.m.</div>
+         <div id="countdown">
+            <div><span id="days">243</span><br />Days</div>
+            <div><span id="hrs">1</span><br />Hours</div>
+            <div><span id="mins">17</span><br />Minutes</div>
+            <div><span id="secs">35</span><br />Seconds</div>
+         </div>
+</form>
+
+</body>
+
+</html>
